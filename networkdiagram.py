@@ -30,7 +30,7 @@ for ix,ip in enumerate(records):
         line = line.strip()
         if (line != '') and ('Trac' not in line) and ('hops' not in line):
             if 'out.' in line:
-                oldip = oldip + ', "** Filtered **'
+                oldip = oldip + ', ** Filtered **'
             else:
                 oldip = oldip + ',' + line.split(' ')[-1]
     f.write( oldip + '\n')
