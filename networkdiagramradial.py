@@ -92,6 +92,6 @@ f=open('flare.json', 'wb')
 f.write(json)
 f.close()
 import os
-os.system('index.html')
+os.system('DiagramRadial.html')
 
 
